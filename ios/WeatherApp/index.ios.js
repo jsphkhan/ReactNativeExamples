@@ -1,5 +1,5 @@
 /**
- * Sample ReactNative WeatherApp
+ * Weather App for iOS made with React Native
  * https://github.com/jsphkhan/ReactNativeExamples/tree/master/ios/WeatherApp
  */
 'use strict';
