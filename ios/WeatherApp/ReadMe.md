@@ -3,8 +3,8 @@
 Weather App for iOS, made with [React-Native](https://github.com/facebook/react-native).
 
 ### Screenshots:  
-Screen1                    |   Screen2                 |  Screen3
-:-------------------------:|:-------------------------:|:-------------------------
+Screen 1                   |   Screen 2                |   Screen 3
+:-------------------------:|:-------------------------:|:-------------------------:
 <img src="http://jsphkhan.github.io/ReactNativeWeatherApp/assets/screenshots/screen1.png" height="500"  width="271"/>  | <img src="http://jsphkhan.github.io/ReactNativeWeatherApp/assets/screenshots/screen2.png" height="500"  width="271"/>  | <img src="http://jsphkhan.github.io/ReactNativeWeatherApp/assets/screenshots/screen3.png" height="500"  width="271"/>
 
 
