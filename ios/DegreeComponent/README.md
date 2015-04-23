@@ -3,10 +3,10 @@
 A degree component for apps dealing with weather temperatures. for eg. 23 degree celcius, 41 degree fahrenheit. 
 This component uses React Native <View /> component to create the circular structure rather than a png icon. Refer the screenshot below.
 
-##### Screenshot
+#### Screenshot
 <img src="http://jsphkhan.github.io/DegreeComponent/degree.png" />
 
-##### How to use?
+#### How to use?
 ###### Import the component
 ```bash
 var DegreeComponent = require('../Components/DegreeComponent');
