@@ -60,7 +60,7 @@ var SearchView = React.createClass({
    		})).done();
 	},
 	handleResponseForForecast: function(forecastData, currentWeatherData) {
-		this.setState({isLoading: false});
+		this.setState({isLoading: false, message: ''});
 		//once response from both API's come, navigate to TodayView
 		this.props.navigator.push({
 			title: "Current",
@@ -106,13 +106,14 @@ var SearchView = React.createClass({
 	//this.props.navigator.pop()
 	handleResponseForCurrentWeather: function(currentWeatherData) {
 		//make API call for 10 day Forecast
+		this.setState({message: 'Gathering 10 day forecast data'});
     	this.fetchApiDataForForecast(this.prepareAPIUrlForForecast(), currentWeatherData);
 	},
 	handleTextInputChange: function(event) {
 		this.setState({searchString: event.nativeEvent.text});
 	},
-	handleButtonPressed: function() {
-		this.setState({isLoading: true, message: ''});
+	handleSearchButtonPressed: function() {
+		this.setState({isLoading: true, message: 'Gathering current weather data'});
 		this.fetchApiDataForCurrentWeather(this.prepareAPIUrlForCurrentWeather());
 	},
 	render: function() {
@@ -131,7 +132,7 @@ var SearchView = React.createClass({
 							value={this.state.searchString}
 							onChange={this.handleTextInputChange}></TextInput>
 
-						<TouchableHighlight style={styles.button} underlayColor="#5CBC85" onPress={this.handleButtonPressed}>
+						<TouchableHighlight style={styles.button} underlayColor="#5CBC85" onPress={this.handleSearchButtonPressed}>
 							<Text style={styles.buttonText}>Get Weather</Text>
 						</TouchableHighlight>
 						{spinner}
