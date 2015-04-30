@@ -114,6 +114,17 @@ var SearchView = React.createClass({
 	},
 	handleSearchButtonPressed: function() {
 		this.setState({isLoading: true, message: 'Gathering current weather data'});
+		// navigator.geolocation.getCurrentPosition(
+		//     location => {
+		//       var search = location.coords.latitude + ',' + location.coords.longitude;
+		//       console.log(search);
+		//     },
+		//     error => {
+		//       this.setState({
+		//         message: 'There was a problem with obtaining your location: ' + JSON.stringify(error)
+		//       });
+	 //    	}
+  //   	);
 		this.fetchApiDataForCurrentWeather(this.prepareAPIUrlForCurrentWeather());
 	},
 	render: function() {
