@@ -1,0 +1,21 @@
+Demo App used for React Native Training - 28,29 May 2018
+
+Demo App consists of :
+-------------------------
+1. Login Screen - login using Firebase Authentication (https://medium.com/react-native-training/react-native-firebase-authentication-7652e1d2c8a2)
+2. Home page - show a list of random users. (randomuser API).
+3. Detail Screen - click on a user to navigate to details screen.
+4. Log out - log out and take user to back to login screen. 
+
+
+RN Modules used:
+-------------------
+3rd party
+1. react-native-firebase
+2. react-navigation
+
+
+Firebase project name: ReactNativeTraining
+--------------------------------------------
+Go to Firebase console to see the project: https://console.firebase.google.com/project/reactnativetraining-a17e9
+
