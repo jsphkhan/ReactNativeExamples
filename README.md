@@ -3,6 +3,9 @@ All my React Native examples and experiements can be found here. This repo is di
 
 ### Instructions
 ```
+git clone https://github.com/jsphkhan/ReactNativeExamples.git
+```
+```
 $ cd into a project folder
 $ npm install
 $ npm start
